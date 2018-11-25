@@ -1,0 +1,40 @@
+/* User popout */
+
+[class*=userPopout] [class*=avatarWrapperNormal] [style*=image],[class*=userPopout] [class*=NonUserBot-]{background-color:unset;width:100%;height:242px;width:242px;background-size:contain;background-position:center;background-repeat:no-repeat;border-radius:0;border:none;mask:unset;-webkit-mask:unset;box-shadow:unset}
+[class*=userPopout] [class*=avatarWrapperNormal]{margin:0;position:absolute;top:4px;left:4px;width:242px;height:250px;border-radius:0}
+[class*=userPopout] [class*=NonUserBot-] [style*=image] {margin-top:4px;border-radius:0}
+[class*=userPopout] [class*=NonUserBot-] [class*=avatarHint-],[class*=userPopout] [class*=pro-],[class*=userPopout] [class*=header] [class*=activity]>[class*=headerText]{display:none}
+[class*=userPopout] [class*=avatar-][class*=popout-] {width:100%;height:100%;border:none;border-radius:unset}
+[class*=userPopout] [class*=header]:hover [class*=avatarWrapperNormal] {-webkit-filter: grayscale(14%);transition: -webkit-filter 500ms ease-out;}
+[class*=userPopout] [class*=headerNormal]{height:262px;transition: -webkit-filter 100ms;background:#202225;padding:0}
+[class*=userPopout] [class*=headerText] {height:236px;width:200px;overflow:hidden;position:absolute;top:2px;display:flex;flex-flow:column;pointer-events:none;justify-content:flex-end}
+[class*=userPopout] [class*=avatarWrapperNormal] [class*=avatarHint-] {background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,0) 100%);margin:0;box-shadow:none;opacity:0;border-radius:0;transition: opacity 180ms ease-out 100ms;-webkit-mask:unset;}
+[class*=userPopout] [class*=avatarWrapperNormal]:hover [class*=avatarHint-] {background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,0) 100%);transition:opacity 300ms ease-in 80ms;opacity:1;}
+[class*=userPopout] [class*=headerText] div[class*=header] {background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 15%,85%,rgba(0,0,0,0) 100%);width: 200px;max-width: 200px;padding:0;order:2;opacity:1;transition: opacity 200ms ease-in;transition-delay: 170ms;min-height:19px;pointer-events:auto}
+[class*=userPopout] .username-wrapper .nickname {margin-bottom:4px;}
+[class*=userPopout] [class*=tatus] {border:none;bottom:-12px;width:242px;height:12px;left:0;box-shadow: inset 0 0 0 3px rgba(255,255,255,.2);border-radius:0;pointer-events:none;}
+[class*=userPopout] [class*=header]:hover [class*=avatarWrapperNormal] [class*=tatus]{-webkit-filter: contrast(105%);transition: -webkit-filter 480ms ease-out;}
+.user-popout .header:not(:hover) .creation-date-wrapper {opacity: 0;transition: opacity 200ms,margin-bottom 270ms ease-out;}
+[class*=userPopout] .header .creation-date-wrapper {padding:3px 0;margin-bottom:145px;order:1;transition:margin-bottom 170ms ease-in-out;min-height:unset;}
+[class*=userPopout] [class*=headerStreaming] [style*=image] [class*=tatus] {border:none;}
+[class*=userPopout] a[class*=Live] {position:fixed;left:0;right:0;top:20px;z-index:2;border:none!important;border-bottom:1px solid rgba(255,255,255,.08);padding:3px 25px;pointer-events:auto;width:200px;height:16px;}
+[class*=userPopout] a[class*=Live]:hover {background:transparent;}
+[class*=userPopout] a[class*=Live] [class*=con] {position:absolute;z-index:-1;width:200px;height:100%;border-radius:0;background:linear-gradient(to right,transparent,#f04747 15%,#f04747 85%,transparent);animation:l-p 1s ease-in-out infinite alternate}
+@keyframes l-p {0%,20%{opacity:.6} 0%,10%,30% {opacity:1}}
+[class*=userPopout] [class*=body-]>[class*=root-] {max-height: 90px;overflow-y: scroll;}
+[class*=userPopout] [class*=body-]>[class*=root-]::-webkit-scrollbar {width:0;}
+[class*=userPopout] svg[name=Gamepad] {margin-top:2px;}
+[class*=userPopout]>[class*=body-] {padding:14px 10px 10px;}
+[class*=userPopout]>[class*=body-] [class*=Divider-] {margin:10px 0 8px;}
+[class*=userPopout] svg[name=Gamepad] ~ [class*=headerText]{display:inline-block;height:unset;width:unset;position:relative;top:unset;margin-top:2px;}
+[class*=userPopout]>[class*=header],[class*=modal] [class*=topSectionNormal]{background:#202225;}
+[class*=userPopout]>[class*=header]:not([class*=ormal]){padding-top:220px;}
+[class*=userPopout] [class*=contentImagesUserPopout]{margin:auto 10px;}
+[class*=userPopout] [class*=avatarWrapper]>[class*=popout-]{height:unset;width:unset}
+
+[class*=modal] [class*=scroller-] {counter-reset: servercount;}
+[class*=modal] [class*=listRow-]:before {counter-increment: servercount;content:counter(servercount);width:20px;min-width:20px;padding:0 2px 0 4px;margin:-10px 6px -10px -20px;font-size:12px;line-height:50px;border-right:1px solid rgba(100,100,100,.2);}
+[class*=modal] [class*=listRow-]:hover:before {background:linear-gradient(to right,rgba(190,190,190,.06) 24px,rgba(190,190,190,.02) 26px);}
+[class*=modal] [class*=scroller-] {counter-reset: servercount;}
+[class*=modal] [class*=listRow-]:before {counter-increment: servercount;content:counter(servercount);width:20px;min-width:20px;padding:0 2px 0 4px;margin:-10px 6px -10px -20px;font-size:12px;line-height:50px;border-right:1px solid rgba(100,100,100,.2);}
+[class*=modal] [class*=listRow-]:hover:before {background:linear-gradient(to right,rgba(190,190,190,.06) 24px,rgba(190,190,190,.02) 26px);}
