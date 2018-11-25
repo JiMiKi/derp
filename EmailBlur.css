@@ -1,4 +1,4 @@
-//META{"name":"EmailBlur","description":"Blur Email in Settings","author":"-","version":"1"}*//{}
+//META{"name":"EmailBlur","description":"Blur Email in Settings","author":"Rauenzi/Zerebos","version":"1"}*//{}
 
 /* Blur account email */
 .userInfoViewing-16kqK3 .flexChild-faoVW3 > div:nth-child(2) .viewBody-2Qz-jg.selectable-x8iAUj {
@@ -8,5 +8,5 @@
 
 .userInfoViewing-16kqK3 .flexChild-faoVW3 > div:nth-child(2) .viewBody-2Qz-jg.selectable-x8iAUj:hover {
     filter: none;
-    transition: 600ms cubic-bezier(.2, .11, 0, 1);
+    transition: 200ms cubic-bezier(.2, .11, 0, 1);
 }
